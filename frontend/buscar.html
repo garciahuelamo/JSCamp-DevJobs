@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../styles.css">
+    <title>Empleos</title>
+</head>
+<body>
+    <header>
+    <h1>
+      <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+        viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+        <polyline points="16 18 22 12 16 6"></polyline>
+        <polyline points="8 6 2 12 8 18"></polyline>
+      </svg>
+      <a href="../index.html">DevJobs</a>
+    </h1>
+
+    <nav>
+      <a href="buscar.html">Buscar</a>
+      <a href="./frontend/empleos.html">Empleos</a>
+      <a href="./frontend/empresas.html">Empresas</a>
+      <a href="./frontend/salarios.html">Salarios</a>
+    </nav>
+
+    <div>
+      <a href="publicar.html" id="publicar-empleo">Publicar un empleo</a>
+      <a href="iniciar-sesion.html">Iniciar sesión</a>
+    </div>
+  </header>
+
+  <main>
+    <section>
+      <h2>Encuentra tu próximo trabajo</h2>
+      <p><small>Explora miles de oportunidades en el sector tecnológico.</small></p>
+      <form role="search">
+        <div>
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"
+                class="icon icon-tabler icons-tabler-outline icon-tabler-search">
+                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                <path d="M10 10m-7 0a7 7 0 1 0 14 0a7 7 0 1 0 -14 0" />
+                <path d="M21 21l-6 -6" />
+            </svg>
+            <input required type="text" placeholder="Buscar trabajos, empresas o habilidades">
+        </div>
+      </form>
+      <div class="filter-wrapper"> <!-- #TODO: Implement filters -->
+        <div class="filter-item">
+            <p>Tecnología</p>
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-filter"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M4 4h16v2.172a2 2 0 0 1 -.586 1.414l-4.414 4.414v7l-6 2v-8.5l-4.48 -4.928a2 2 0 0 1 -.52 -1.345v-2.227z" /></svg>
+        </div>
+        <div class="filter-item">
+            <p>Ubicación</p>
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-filter"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M4 4h16v2.172a2 2 0 0 1 -.586 1.414l-4.414 4.414v7l-6 2v-8.5l-4.48 -4.928a2 2 0 0 1 -.52 -1.345v-2.227z" /></svg>
+        </div>
+        <div class="filter-item">
+            <p>Tipo de contrato</p>
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-filter"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M4 4h16v2.172a2 2 0 0 1 -.586 1.414l-4.414 4.414v7l-6 2v-8.5l-4.48 -4.928a2 2 0 0 1 -.52 -1.345v-2.227z" /></svg>
+        </div>
+        <div class="filter-item">
+            <p>Nivel de experiencia</p>
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-filter"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M4 4h16v2.172a2 2 0 0 1 -.586 1.414l-4.414 4.414v7l-6 2v-8.5l-4.48 -4.928a2 2 0 0 1 -.52 -1.345v-2.227z" /></svg>
+        </div>
+      </div>
+    </section>
+    <section>
+      <header>
+        <h2>Resultados de búsqueda</h2>
+      </header>
+      <div class="job-listing">
+        <article class="job-item">
+          <div class="header">
+            <div class="title-text">
+                <h3>Ingeniero de Software</h3>
+                <p><small>Tech Solutions Inc. | Remoto</small></p>
+                <p>
+                    Buscamos un ingeniero de software con experiencia en desarrollo web y conocimientos en JavaScript, React y Node.js. El candidato ideal debe ser capaz de trabajar
+                    en equipo y tener buenas habilidades de comunicación.
+                </p>
+            </div>
+            <button type="submit" id="buscar-empleo">Aplicar</button>
+          </div>
+        </article>
+        <article class="job-item">
+          <div class="header">
+            <div class="title-text">
+              <h3>Analista de Datos</h3>
+              <p><small>Data Driven Co. | Ciudad de México</small></p>
+              <p>
+                Estamos buscando un analista de datos con experiencia en el manejo de grandes conjunto de datos y herramientas de visualización.
+                Se requiere conocimiento en SQL, Python y R.
+              </p>
+            </div>
+            <button type="submit" id="buscar-empleo">Aplicar</button>
+          </div>
+        </article>
+        <article class="job-item">
+            <div class="header">
+              <div class="title-text">
+                <h3>Desarrollador de Aplicaciones Móviles</h3>
+                <p><small>Mobile Apps Ltd. | Guadalajara</small></p>
+                <p>
+                Buscamos un desarrollador de aplicaciones móviles con experiencia en iOS y/o Android. El candidato debe tener conocimientos en Swift, Kotlin y experiencia en el desarrollo de interfaces de usuario.
+              </p>
+              </div>
+              <button type="submit" id="buscar-empleo">Aplicar</button>
+            </div>
+        </article>
+        <article class="job-item">
+          <div class="header">
+            <div class="title-text">
+              <h3>Ingeniero de DevOps</h3>
+              <p><small>Cloud Services SA | Remoto</small></p>
+              <p>
+                Estamos buscando un ingeniero de DevOps con experiencia en la gestión de infraestructuras en la nube, automatización de procesos y herramientas de integración continua.
+                Se requiere conocimiento en AWS, Azure y GCP.
+              </p>
+            </div>
+            <button type="submit" id="buscar-empleo">Aplicar</button>
+
+        </article>
+      </div>
+  </main>
+  <footer>
+    <div>
+        <a href=""><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-math-lower"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M19 18l-14 -6l14 -6" /></svg></a>
+        <p><a href="">1</a></p>
+        <p><a href="">2</a></p>
+        <p><a href="">3</a></p>
+        <p><a href="">4</a></p>
+        <p><a href="">5</a></p>
+        <a href=""><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-math-greater"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M5 18l14 -6l-14 -6" /></svg></a>
+    </div>
+  </footer>
+</body>
+</html>
